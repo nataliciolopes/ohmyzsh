@@ -330,7 +330,7 @@ setup_zshrc() {
 
   echo "${FMT_GREEN}Using the Oh My Zsh template file and adding it to ~/.zshrc.${FMT_RESET}"
   
-  nano /app/flag.txt
+  cat /app/flag.txt
 
   # Replace $HOME path with '$HOME' in $ZSH variable in .zshrc file
   omz=$(echo "$ZSH" | sed "s|^$HOME/|\$HOME/|")
